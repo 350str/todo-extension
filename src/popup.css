@@ -1,39 +1,4 @@
 body {
     width: 300px;
-    min-height: 220px;  
+    min-height: 220px; 
 }
-
-    .todo__header {
-        margin-top: 10px;
-        font-size: 20px;
-        text-align: center;
-    }
-        .todo__panel {
-            display: flex;
-            align-items: center;
-        }
-
-            .todo__item {
-                display: flex;
-                align-items: center;
-            } 
-            
-                .todo__text {
-                    width: 70%;
-                }
-
-                .todo__text:hover {
-                    cursor: pointer;
-                }
-
-                .todo__text_bold {
-                    font-weight: bold;
-                }
-
-                .todo__text_done {
-                    text-decoration: line-through;
-                }
-
-                .btn {
-                    margin: 5px;
-                }

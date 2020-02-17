@@ -1,14 +1,10 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import './popup.css';
-import TodoPanel from './todo-panel';
-import TodoItem from './todo-item';
+import TodoPanel from './blocks/todo-panel';
+import TodoItem from './blocks/todo-item';
 
 (function(){
-
-const main = document.querySelector('.todo');
-const button = document.querySelector('.todo__button');
-const inputVal = document.querySelector('.todo__input');
 
 const todoPanel = new TodoPanel();
 const todoItem = new TodoItem();
@@ -21,8 +17,10 @@ window.onload = () => {
     })
 }
 
-inputVal.addEventListener('input', todoPanel.inputer);
-button.addEventListener('click', todoPanel.addItem);
+const main = document.querySelector('.todo');
+
+document.querySelector('.todo__input').addEventListener('input', todoPanel.inputer);
+document.querySelector('.todo__button').addEventListener('click', todoPanel.addItem);
 main.addEventListener('click', todoItem.important);
 main.addEventListener('click', todoItem.remove);
 main.addEventListener('click', todoItem.done);

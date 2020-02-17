@@ -1,3 +1,5 @@
+import './todo-item.css';
+
 export default class TodoItem {
     
     important(event) {

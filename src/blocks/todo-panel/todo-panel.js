@@ -1,3 +1,5 @@
+import './todo-panel.css';
+
 export default class TodoPanel {
 
     constructor() {

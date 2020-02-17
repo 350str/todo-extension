@@ -1,0 +1,9 @@
+.todo__header {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+    .todo__panel {
+        display: flex;
+        align-items: center;
+    }
