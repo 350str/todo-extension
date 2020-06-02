@@ -2,11 +2,6 @@ import './todo-panel.css';
 
 export default class TodoPanel {
 
-    constructor() {
-        this.button = document.querySelector('.todo__button');
-        this.inputVal = document.querySelector('.todo__input');
-    }
-
     htmlCreate( data, key, important = false, done = false ) {
         const container = document.querySelector('.todo__items');
         const newItem = document.createElement("div");
@@ -15,7 +10,7 @@ export default class TodoPanel {
         newItem.classList.add('todo__item');
         newItem.setAttribute('id', `${key}`);
         newItem.insertAdjacentHTML('beforeEnd', `
-                <span class="list-group-item todo__text">${data}</span>
+                <div class="list-group-item todo__text">${data}</div>
                 <button class="btn btn-outline-success btn-sm float-right todo__button_important">!</button>
                 <button class="btn btn-outline-danger btn-sm float-right todo__button_delete">Del</button>`
         );

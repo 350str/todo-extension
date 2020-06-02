@@ -2,7 +2,7 @@ const presets = [
     [
       "@babel/env",
       {
-        targets: { // указать цели, для полифилов
+        targets: { // цели для полифилов
               edge: "17",
               ie: "11",
               firefox: "50",
@@ -16,7 +16,7 @@ const presets = [
   ];
 
 const plugins = [
-  ["@babel/plugin-proposal-class-properties", { "loose": true }]
+  ["@babel/plugin-proposal-class-properties", { "loose": true }] // @babel/plugin-proposal-class-properties - для поддержки синтаксиса классов
 ]
   
   module.exports = { presets, plugins };

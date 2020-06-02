@@ -7,7 +7,16 @@
         <h1 class="todo__header">My Todo app</h1>
 
         <div class="input-group mb-3 todo__panel">
-            <input type="text" class="form-control todo__input" placeholder="Smth..." aria-label="Recipient's username" aria-describedby="button-addon2" minlength="2" autofocus required>
+            <input 
+                type="text" 
+                class="form-control todo__input" 
+                placeholder="Smth..." 
+                aria-label="Recipient's username" 
+                aria-describedby="button-addon2" 
+                minlength="2" 
+                maxlength="20"
+                autofocus 
+                required>
             <div class="input-group-append">
               <button class="btn btn-outline-secondary todo__button" type="button" id="button-addon2" disabled>Add</button>
             </div>

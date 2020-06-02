@@ -1,7 +1,7 @@
 {
     "name": "Todo app",
     "version": "1.0",
-    "description": "Todo list for testing",
+    "description": "Todo app",
     "manifest_version": 2,
     "permissions": [ "storage" ],
     "browser_action": {
