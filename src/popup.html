@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
+<body>
+    <main class="todo">
+        <h1 class="todo__header">My Todo app</h1>
+
+        <div class="input-group mb-3 todo__panel">
+            <input 
+                type="text" 
+                class="form-control todo__input" 
+                placeholder="Smth..." 
+                aria-label="Recipient's username" 
+                aria-describedby="button-addon2" 
+                minlength="2" 
+                maxlength="20"
+                autofocus 
+                required>
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary todo__button" type="button" id="button-addon2" disabled>Add</button>
+            </div>
+        </div>
+    
+        <div class="todo__items"></div>
+
+    </main>
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+</html>
