@@ -1,7 +1,7 @@
-# todo-extension
+# chrome todo-extension
 
-Практика в chrome extensions на примере обычной тудушки
-Native HTML, CSS, JavaScript, Bootstrap, localStorage, webpack
+Практика в chrome extensions на примере обычной тудушки:
+HTML, CSS, Vanila JavaScript, Bootstrap, Webpack
 
 ## install  
 1) npm i  
